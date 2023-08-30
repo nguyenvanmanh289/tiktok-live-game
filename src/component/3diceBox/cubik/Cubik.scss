@@ -1,0 +1,57 @@
+$cubix-size : 50px;
+
+#wrap-cubik{
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    perspective-origin: 50px -190px;
+    #container-cubik{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sideresult{
+            position: absolute;
+            width: $cubix-size;
+            height: $cubix-size;
+            background-color: gray;
+            font-size: 4em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+
+            &:nth-child(1){
+                background-image: url("../../../asset/huou.png");
+                transform: rotateY(180deg) translateZ($cubix-size/2) ;
+             }
+             &:nth-child(2){
+                background-image: url("../../../asset/bau.png");
+                transform: rotateY(90deg) translateZ($cubix-size/2);
+
+             }
+             &:nth-child(3){
+                background-image: url("../../../asset/ga.png");
+                transform: rotateX(90deg) translateZ($cubix-size/2);
+             }
+             &:nth-child(4){
+                background-image: url("../../../asset/ca.png");
+                transform: rotateX(-90deg) translateZ($cubix-size/2); 
+             }
+             &:nth-child(5){
+                background-image: url("../../../asset/cua.png");
+                transform: rotateY(-90deg) translateZ($cubix-size/2); 
+             }
+             &:nth-child(6){
+                background-image: url("../../../asset/tom.png");
+                transform: translateZ($cubix-size/2);
+             }
+        } 
+    }
+}
+
+//animation
+

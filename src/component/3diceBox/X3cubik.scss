@@ -1,0 +1,49 @@
+#wrap-x3cubik{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #plate {
+        position: absolute;
+        width: 25%;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image:radial-gradient(rgb(194, 194, 194),rgb(117, 117, 117),rgb(255, 255, 255));
+        border-radius: 50%;
+            .cubik {
+                position: absolute;
+                width: 100px;
+                aspect-ratio: 1;
+    
+                &:nth-child(1) {
+                    transform: translateX(-40px) translateY(-40px);
+                }
+    
+                &:nth-child(2) {
+                    transform: translateX(40px) translateY(-40px);
+                }
+    
+                &:nth-child(3) {
+                    transform: translateY(40px);
+                }
+            }
+    }
+    #hide{
+        position: absolute;
+        width: 23%;
+        aspect-ratio: 1;
+        background-image: radial-gradient(rgb(0, 0, 0),rgb(25, 25, 25),rgb(69, 69, 69));
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5em;
+        color: red;
+    }
+
+}
